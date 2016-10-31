@@ -1,0 +1,13 @@
+{
+
+  "manifest_version": 2,
+  "name": "VK Left Bar Fix",
+  "version": "1.0",
+  "description": "A plain text description",
+  "content_scripts": [
+    {
+      "matches": ["https://vk.com/*"],
+      "css": ["barFix.css"]
+    }
+  ]
+}

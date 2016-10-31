@@ -1,0 +1,30 @@
+{
+    "author": "cubbic",
+    "browser_action": {
+        "default_icon": {
+            "16": "logo.png",
+            "32": "logo.png",
+            "48": "logo.png",
+            "64": "logo.png",
+            "128": "logo.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://vk.com/*"
+            ],
+            "css": [
+                "barFix.css"
+            ]
+        }
+    ],
+    "description": "Makes Go Up zone smaller",
+    "manifest_version": 2,
+    "name": "VK Go Up+",
+    "version": "1.0",
+    "-ms-preload": {
+        "backgroundScript": "backgroundScriptsAPIBridge.js",
+        "contentScript": "contentScriptsAPIBridge.js"
+    }
+}

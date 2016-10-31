@@ -1,13 +1,16 @@
 {
 
   "manifest_version": 2,
-  "name": "VK Left Bar Fix",
+  "name": "VK Go Up+",
   "version": "1.0",
-  "description": "A plain text description",
+  "description": "Makes Go Up zone smaller",
   "content_scripts": [
     {
       "matches": ["https://vk.com/*"],
       "css": ["barFix.css"]
     }
-  ]
+  ],
+  "browser_action": {
+          "default_icon": "logo.png"
+        }
 }
